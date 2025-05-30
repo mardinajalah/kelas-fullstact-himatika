@@ -63,7 +63,11 @@ dan pasang di tag head nya seperti ini
 </head>
 ```
 
-## C. latihan membuat card sederhanah
+## C. latihan membuat card sederhana
+
+<img src="../pertemuan1/contoh gambar/contoh1.png" />
+
+<br />
 
 ```html
 <html>
