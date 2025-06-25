@@ -80,6 +80,59 @@ div {
 
 # belaja html css lengkap menggunakan video
 
-## 1. <a href="https://www.youtube.com/watch?v=NBZ9Ro6UKV8&list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F" > belajar html dasar </a>
+### <a href="https://www.youtube.com/watch?v=NBZ9Ro6UKV8&list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F" >1. belajar html dasar </a>
 
-## 2. <a href="https://www.youtube.com/watch?v=CleFk3BZB3g&list=PLFIM0718LjIUBrbm6Gdh6k7ZUvPIAZm7p" > belajar css dasar </a>
+### <a href="https://www.youtube.com/watch?v=CleFk3BZB3g&list=PLFIM0718LjIUBrbm6Gdh6k7ZUvPIAZm7p" >2. belajar css dasar </a>
+
+<br />
+
+# B Pengenalan Dom
+
+## 1 apa itu DOM
+
+DOM adalah singkatan dari Document Object Model. DOM adalah representasi struktur halaman web yang dimuat oleh browser dalam bentuk pohon (tree). Dengan DOM, kita bisa mengakses dan memanipulasi elemen HTML menggunakan JavaScript.
+
+DOM membuat setiap elemen HTML seperti ```<h1>```, ```<div>```, ```<p>```, dan lain-lain, bisa dikenali sebagai objek yang bisa diubah isinya, gayanya, atau bahkan bisa dihapus atau ditambahkan elemen baru secara dinamis.
+
+
+### A Mengakses DOM dengan JavaScript
+
+```html
+
+<p id="teks">Halo!</p>
+
+<script>
+  const elemen = document.getElementById("teks");
+  console.log(elemen.innerText); // Output: Halo!
+</script>
+
+```
+
+### B Mengubah gaya (CSS) elemen
+
+```html
+
+<div id="box">Kotak</div>
+
+<script>
+  const box = document.getElementById("box");
+  box.style.backgroundColor = "blue";
+  box.style.color = "white";
+</script>
+
+```
+
+### D. Event Listener (Mendeteksi aksi pengguna)
+
+```html
+
+<button id="tombol">Klik saya</button>
+
+<script>
+  const tombol = document.getElementById("tombol");
+  tombol.addEventListener("click", () => {
+    alert("Tombol diklik!");
+  });
+</script>
+
+```
